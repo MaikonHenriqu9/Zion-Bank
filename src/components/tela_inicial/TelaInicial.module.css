@@ -1,0 +1,55 @@
+.containerTelaInicial{
+    width: 100%;
+    height: auto;
+    padding: 2% 3% 0% 3%;
+    background: linear-gradient(to bottom, #2B6A86, #02447D);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa1{
+    max-width: 100%;
+    height: 100%;
+    padding: 0% 1%;
+    color: #fff;
+    flex: 1;
+}
+
+.caixa1 h1{
+    font-size: clamp(1rem, 3vw, 3rem);
+    margin-top: 7%;
+}
+
+.botao{
+    width: clamp(20%, 50% ,60%);
+    padding: 2% 1%;
+    background-color: #3EA8A1;
+    border-radius: 10px;
+    margin: 7% 0;
+    text-align: center;
+}
+
+.botao h3{
+    font-size: clamp(0.5rem, 2vw,1rem);
+}
+
+.caixa2{
+    max-width: 100%;
+    flex: 1;
+}
+
+/* EFEITOS */
+.botao:hover{
+    cursor: pointer;
+}
+
+.botao:active{
+    background-color: #358f89;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .containerTelaInicial{
+        flex-direction: column;
+    }
+}

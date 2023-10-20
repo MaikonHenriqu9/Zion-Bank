@@ -1,0 +1,149 @@
+.containerApp {
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    background: linear-gradient(to bottom, #3EA8A1, #2B6A86);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Download do banco */
+.caixa1 {
+    width: 50%;
+    height: 500px;
+}
+
+.caixa1 h1 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #fff;
+}
+
+/* Container dos botões Google e Apple */
+.containerBotoes {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.btnGoogle,
+.btnApple {
+    min-width: 10vw;
+    height: auto;
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.btnGoogle img {
+    width: 30px;
+    height: 30px;
+}
+
+.btnApple img {
+    width: 30px;
+    height: 30px;
+}
+
+.btnApple,
+.btnGoogle p {
+    color: #fff;
+}
+
+/* Mockup do App do Banco */
+.caixa2 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: flex-end;
+}
+
+/* Responsividade */
+/* Mobile */
+@media (max-width: 480px) {
+    .containerApp {
+        flex-direction: column-reverse;
+    }
+
+    .caixa1 {
+        width: 90%;
+        height: auto;
+    }
+
+    .containerBotoes {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .btnGoogle,
+    .btnApple{
+        width: 40vw;
+        margin-bottom: 5%;
+    }
+
+
+    .caixa2 {
+        width: 50%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+}
+
+/* Extra small device */
+@media (min-width: 481px) and (max-width: 767px){
+    .containerApp{
+        flex-direction: column-reverse;
+    }
+
+    .caixa1{
+        width: 90%;
+        height: auto;
+    }
+
+    .containerBotoes {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .btnGoogle,
+    .btnApple{
+        width: 40vw;
+        margin-bottom: 5%;
+    }
+
+    .caixa2{
+        width: 50%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Small Tablets */
+@media (min-width: 767px) and (max-width: 991px){
+    .containerBotoes {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .caixa1{
+        height: auto;
+    }
+
+    .btnGoogle,
+    .btnApple{
+        min-width: 20vw;
+        margin-bottom: 5%;
+    }
+}

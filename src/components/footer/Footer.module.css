@@ -1,0 +1,101 @@
+.containerFooter{
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+
+.caixa1{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.caixaAtendimento,
+.caixaInstituicao,
+.caixaOutros p, h3{
+    color: #fff;
+}
+
+.titulo{
+    margin-bottom: 5%;
+}
+
+.caixa2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.caixaEsquerda img{
+    width: clamp(40%, 60%, 70%);
+    height: auto;
+    margin: 4%;
+}
+
+.caixaDireita{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.caixaDireita img{
+    width: 10%;
+    height: auto;
+}
+
+.caixa3 p{
+    text-align: center;
+    font-size: clamp(0.5rem, 1vw ,1.25rem);
+    color: #fff;
+    margin-top: 2%;
+}
+
+/* EFEITO */
+.caixaDireita img:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.caixaAtendimento p:hover,
+.caixaInstituicao p:hover,
+.caixaOutros p:hover{
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+
+/*Mobile*/
+@media (max-width: 480px){
+    .caixa1{
+        flex-direction: column;
+    }
+
+    .caixaAtendimento,
+    .caixaInstituicao,
+    .caixaOutros{
+        margin: 1% 0 5% 0;
+    }
+}
+
+/* Extra small device */
+@media (min-width: 481px) and (max-width: 767px){
+    
+    .caixaAtendimento,
+    .caixaInstituicao,
+    .caixaOutros{
+        margin: 1% 0 2% 5%;
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    .caixaAtendimento,
+    .caixaInstituicao,
+    .caixaOutros{
+        margin: 1% 0 0 5%;
+    }
+}

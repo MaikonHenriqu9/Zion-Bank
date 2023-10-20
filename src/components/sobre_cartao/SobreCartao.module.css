@@ -1,0 +1,87 @@
+.containerCartao {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    flex-wrap: wrap;
+}
+
+.caixa1 {
+    width: 45%;
+    height: auto;
+}
+
+.caixa2 {
+    width: 45%;
+    height: 67vh;
+}
+
+.caixa2 h1{
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.caixa2 p{
+    font-size: clamp(0.92em, 3vw, 1.5em);
+    padding: 3% 0;
+    font-weight: 200;
+}
+
+.botaoSolicitarCartao{
+    max-width: 50vw;
+    background-color: #3EA8A1;
+    padding: 2%;
+    text-align: center;
+    font-size: clamp(0.7rem, 2vw, 1.25rem);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .containerCartao{
+        flex-direction: column;
+    }
+
+    .caixa1{
+        width: 90%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    .caixa2{
+        width: 90%;
+        height: auto;
+        margin-bottom: 3%;
+    }
+}
+
+/* Extra small device */
+@media (min-width: 481px) and (max-width: 767px){
+    .containerCartao{
+        flex-direction: column;
+    }
+
+    .caixa1{
+        width: 90%;
+        height: auto;
+        
+        margin-bottom: 2%;
+    }
+
+    .caixa2{
+        width: 90%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+    .caixa2{
+        height: auto;
+    }
+}
