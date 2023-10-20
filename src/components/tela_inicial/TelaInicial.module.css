@@ -27,6 +27,13 @@
     border-radius: 10px;
     margin: 7% 0;
     text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    transition: 2s all;
 }
 
 .botao h3{
@@ -40,16 +47,22 @@
 
 /* EFEITOS */
 .botao:hover{
-    cursor: pointer;
-}
-
-.botao:active{
-    background-color: #358f89;
+    background-color: #31847e;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 2s all;
 }
 
 /* Mobile */
 @media (max-width: 480px) {
     .containerTelaInicial{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caixa1{
+        width: 90%;
     }
 }

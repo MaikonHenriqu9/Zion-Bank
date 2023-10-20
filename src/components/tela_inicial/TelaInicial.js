@@ -13,9 +13,9 @@ function TelaInicial() {
                     da sua vida financeira.                    
                 </h1>
 
-                <button className={Style.botao}>
+                <div className={Style.botao}>
                     <h3>Abra sua conta</h3>
-                </button>
+                </div>
             </div>
 
             {/* Imagem */}

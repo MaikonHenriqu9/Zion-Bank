@@ -14,14 +14,14 @@ function AppBanco() {
                 </h1>
 
                 <div className={Style.containerBotoes}>
-                        <button type="button" className={Style.btnGoogle}>
+                        <div type="button" className={Style.btnGoogle}>
                             <img src={google} alt="" /> 
                             <p>Google</p>
-                        </button>
-                        <button type="button" className={Style.btnApple}>
+                        </div>
+                        <div type="button" className={Style.btnApple}>
                             <img src={apple} alt="" /> 
                             <p>Apple</p>
-                        </button>
+                        </div>
                 </div>
             </div>
 
