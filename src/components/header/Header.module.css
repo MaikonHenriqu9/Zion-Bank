@@ -41,6 +41,12 @@ li{
     font-weight: bold;
     list-style: none;
     color: #fff;
+    cursor: pointer;
+}
+
+li:hover{
+    transition: 2s all;
+    color: #72cbc5;
 }
 
 .botao{

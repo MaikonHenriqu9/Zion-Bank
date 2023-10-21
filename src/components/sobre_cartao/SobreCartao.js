@@ -1,7 +1,16 @@
 import Style from './SobreCartao.module.css'
 import cartao from '../../img/cartao1.png'
+import {React, useEffect} from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function SobreCartao() {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <section className={Style.containerCartao}>
             <div className={Style.caixa1}>

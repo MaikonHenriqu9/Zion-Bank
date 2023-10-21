@@ -1,27 +1,28 @@
-import Style from './AppBanco.module.css'
-import celular from '../../img/app-smartphone.png'
-import google from '../../img/icon-google.png'
-import apple from '../../img/icon-apple.png'
+import Style from './AppBanco.module.css';
+import celular from '../../img/app-smartphone.png';
+import google from '../../img/icon-google.png';
+import apple from '../../img/icon-apple.png';
 
 function AppBanco() {
+
     return (
-        <section className={Style.containerApp}>
+        <section className={Style.containerApp} >
             <div className={Style.caixa1}>
                 <h1>
-                    Faça parte do Zion Bank<br/>
-                    e experimente a tranquilidade <br/>
+                    Faça parte do Zion Bank<br />
+                    e experimente a tranquilidade <br />
                     em sua vida financeira.
                 </h1>
 
                 <div className={Style.containerBotoes}>
-                        <div type="button" className={Style.btnGoogle}>
-                            <img src={google} alt="" /> 
-                            <p>Google</p>
-                        </div>
-                        <div type="button" className={Style.btnApple}>
-                            <img src={apple} alt="" /> 
-                            <p>Apple</p>
-                        </div>
+                    <div type="button" className={Style.btnGoogle}>
+                        <img src={google} alt="" />
+                        <p>Google</p>
+                    </div>
+                    <div type="button" className={Style.btnApple}>
+                        <img src={apple} alt="" />
+                        <p>Apple</p>
+                    </div>
                 </div>
             </div>
 
@@ -29,6 +30,7 @@ function AppBanco() {
             <div className={Style.caixa2}>
                 <img src={celular} alt="" />
             </div>
+
         </section>
     )
 }
